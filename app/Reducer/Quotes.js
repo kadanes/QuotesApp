@@ -29,7 +29,7 @@ export default function (state = defaultState, action) {
                 loading: true,
                 error: false,
                 data: undefined
-            
+                
             }
         }
         case 'SAVE_QUOTE':{
@@ -68,4 +68,15 @@ export default function (state = defaultState, action) {
 
 export const getFavourites = (state) => {
     return state.favourites
+}
+
+export const getFavouriteQuotes = (state) => {
+   return state.favourites.map(favouriteId => {
+        var [parentId, id] = favouriteId.split('_')
+        return {
+            ...state.data[parentId].quotes[id],
+            category: state.data[parentId].category,
+            parentId
+        }
+   })
 }

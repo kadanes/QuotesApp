@@ -7,8 +7,9 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 class QuotesList extends Component {
 
     static navigationOptions = ({ navigation }) => {
+        category = navigation.getParam('category', 'Quotes')
         return {
-        title: navigation.getParam('category', 'Quotes').charAt(0).toUpperCase() + navigation.getParam('category', 'Quotes').slice(1),
+        title: category.charAt(0).toUpperCase() + category.slice(1),
         }
     };
 
@@ -17,10 +18,11 @@ class QuotesList extends Component {
     }
 
     render() {
-
+       
         const { navigation } = this.props
         const parentId = navigation.getParam('id','nil')
-        const quotes = navigation.getParam('quotes','none')
+
+        const quotes = this.props.quotes[parentId].quotes
 
         return (
             <View style={styles.Container}>
@@ -29,20 +31,26 @@ class QuotesList extends Component {
                     data= {quotes}
                     renderItem = {({item,index}) => {
                         return (
-                            <View style={styles.TableCell}>
+                            <View style={styles.TableCell}  key={index}>
                                 
-                            <View style={{flex:1,flexDirection:'row'}}>
-                            <View style={{flex:1,flexDirection:'column'}}>
+                            <View style={{flex:1,flexDirection:'row', alignItems: 'center'}}>
+                            <View style={{flex:1,flexDirection:'column', justifyContent: 'space-between'}}>
                                 <Text style={styles.Quote}>{item.text}</Text>
                                 <Text style={styles.Author}>-- {item.person}</Text>
                             </View>
                             
                             {  
                                 this.props.favourites.includes(`${parentId}_${index}`) ?
-                                <TouchableOpacity onPress={() => this.props.unsave(parentId,index)}>  
+                                <TouchableOpacity onPress={() => {
+                                    this.props.unsave(parentId,index)
+                                }}>  
                                     <Ionicons name='ios-remove-circle' style={styles.Button}/> 
                                 </TouchableOpacity>:
-                                <TouchableOpacity  onPress={() => this.props.save(parentId,index)}> 
+                                <TouchableOpacity  onPress={() => {
+                                    
+                                    this.props.save(parentId,index)
+                                    this.props.navigation.navigate('Favourites')
+                                }}> 
                                     <Ionicons name='ios-add-circle' style={styles.Button}/>
                                 </TouchableOpacity> 
                             }
@@ -72,7 +80,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#ff6347',
         margin:5,
         padding: 20,
-        borderRadius: 15,
+        borderRadius: 15
      
     },
     "Quote": {
@@ -82,21 +90,21 @@ const styles = StyleSheet.create({
     "Author": {
         fontWeight:'200',
         color:'white',
-        justifyContent: 'flex-end',
-        alignItems: 'flex-end',
-        height: 20
+        height: 20, 
+        marginTop: 10  
     },
     "Button": {
-        color: "white",
+        color: "#DCDCDC",
         fontWeight:'700',
-        fontSize: 20
+        fontSize: 30
     }
 })
 
 const matchStateToProps = (state) =>{ 
     console.log("Quote list: ",state)
     return {
-        favourites: state.favourites
+        favourites: state.favourites,
+        quotes: state.data
     }
 }
 

@@ -1,66 +1,45 @@
 import React, {Component} from 'react'
-import {TouchableOpacity, Button, Text, View, FlatList, StyleSheet, ActivityIndicator} from 'react-native'
+import {Button, Text, View, FlatList, StyleSheet, ActivityIndicator} from 'react-native'
 import CategoryCell from '../Components/CategoryCell'
 import { connect } from 'react-redux'
+import { fetchQuotes } from '../actions/Quotes'
 
-
-class QuotesCategories extends Component {
+export class QuoteCategories extends Component {
 
     static navigationOptions = {
         title: 'Categories',
-        headerRight: (
-            <Button
-              onPress={() => alert('This is a button!')}
-              title="Info"
-              color="#fff"
-            />
-          )
     }
 
     render() {
-
-        if (this.props.error == true) {
-            return(
-                <View style={styles.Container}>
-                    <Text style={{color: 'red'}}>FAILED TO LOAD DATA</Text>
-                    <Button 
-                        title='Reload'
-                        onPress={this.makeRemoteRequest}
-                    />
-                </View>
-            )
-        } else if (this.props.loading) {
-            return(
-                <View style={styles.Container}>
-                    <ActivityIndicator size="large"/>
-                </View>
-            )
-        } else if (!this.props.loading && !this.props.error) {
-            return (
-                <View style={styles.Container}>
-                    <FlatList
-                    style= {{flex:1, width: '100%'}}
-                    data= {this.props.data}
-                    renderItem = {({item,index}) => {
-                        return (
-                            
-                            <TouchableOpacity 
-                                onPress={() => this.props.navigation.navigate('Quotes',{quotes: item.quotes, id: index, category: item.category})}
-                            >
-                         
-                                <CategoryCell Category={item}/>
-          
-                            </TouchableOpacity>  
-                        )
-                    }}
-                    keyIterator = {(item,index) => index}
-                    />  
-                
-                </View>
-                   
-            )
-        }
-            
+        
+    return this.props.error ? (
+            <View style={styles.Container}>
+                <Text style={{color: 'red'}}>FAILED TO LOAD DATA</Text>
+                <Button 
+                    title='Reload'
+                    onPress={this.props.fetchQuotes}
+                />
+            </View>
+        ) : this.props.loading ? (
+            <View style={styles.Container}>
+                <ActivityIndicator size="large"/>
+            </View>
+        ) : (
+            <View style={styles.Container}>
+                <FlatList
+                style= {{flex:1, width: '100%'}}
+                data= {this.props.data}
+                renderItem = {({item,index}) => {
+                    return (
+                        <CategoryCell Category={item} navigation={this.props.navigation} id={index}/>
+                    )
+                }}
+                keyExtractor = {(item) => item.category}
+                />  
+                <Text>Additions</Text>
+            </View>
+               
+        )            
     }    
 }
 
@@ -72,11 +51,20 @@ const styles = StyleSheet.create({
     }
 })
 
-const mapStateToProps = (state,props) => {
+export const mapStateToProps = (state) => {
     return {
         loading: state.loading,
         error: state.error,
         data: state.data
     }
 }
-export default connect(mapStateToProps)(QuotesCategories)
+
+export const mapDispatchToProps = (dispatch) => {
+    return {
+        fetchQuotes: () => {
+            dispatch(fetchQuotes())
+        }
+    }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(QuoteCategories)

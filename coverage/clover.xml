@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1545463206372" clover="3.2.0">
+  <project timestamp="1545463206372" name="All files">
+    <metrics statements="110" coveredstatements="79" conditionals="29" coveredconditionals="7" methods="35" coveredmethods="13" elements="174" coveredelements="99" complexity="0" loc="110" ncloc="110" packages="5" files="9" classes="9">
+      <package name="Components">
+        <metrics statements="56" coveredstatements="47" conditionals="8" coveredconditionals="7" methods="22" coveredmethods="13"/>
+        <file name="CategoryCell.js" path="/Users/Parth/Documents/NativeApps/Quotes/app/Components/CategoryCell.js">
+          <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="16" count="6" type="stmt"/>
+          <line num="21" count="2" type="stmt"/>
+          <line num="25" count="2" type="stmt"/>
+        </file>
+        <file name="FavouriteQuoteCell.js" path="/Users/Parth/Documents/NativeApps/Quotes/app/Components/FavouriteQuoteCell.js">
+          <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="24" count="2" type="stmt"/>
+          <line num="26" count="2" type="stmt"/>
+        </file>
+        <file name="FavouriteQuotesList.js" path="/Users/Parth/Documents/NativeApps/Quotes/app/Components/FavouriteQuotesList.js">
+          <metrics statements="19" coveredstatements="16" conditionals="4" coveredconditionals="3" methods="7" coveredmethods="3"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="8" count="2" type="stmt"/>
+          <line num="14" count="2" type="stmt"/>
+          <line num="15" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="21" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="29" count="0" type="stmt"/>
+          <line num="38" count="0" type="stmt"/>
+          <line num="44" count="1" type="stmt"/>
+          <line num="48" count="1" type="stmt"/>
+          <line num="54" count="1" type="stmt"/>
+          <line num="62" count="1" type="stmt"/>
+        </file>
+        <file name="QuoteCategories.js" path="/Users/Parth/Documents/NativeApps/Quotes/app/Components/QuoteCategories.js">
+          <metrics statements="21" coveredstatements="15" conditionals="4" coveredconditionals="4" methods="8" coveredmethods="3"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="7" count="4" type="stmt"/>
+          <line num="13" count="4" type="stmt"/>
+          <line num="15" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="32" count="0" type="stmt"/>
+          <line num="33" count="0" type="stmt"/>
+          <line num="37" count="0" type="stmt"/>
+          <line num="43" count="1" type="stmt"/>
+          <line num="46" count="1" type="stmt"/>
+          <line num="54" count="1" type="stmt"/>
+          <line num="55" count="0" type="stmt"/>
+          <line num="60" count="1" type="stmt"/>
+          <line num="62" count="1" type="stmt"/>
+          <line num="63" count="0" type="stmt"/>
+          <line num="65" count="0" type="stmt"/>
+          <line num="68" count="1" type="stmt"/>
+          <line num="70" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="Reducer">
+        <metrics statements="27" coveredstatements="6" conditionals="13" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <file name="Quotes.js" path="/Users/Parth/Documents/NativeApps/Quotes/app/Reducer/Quotes.js">
+          <metrics statements="27" coveredstatements="6" conditionals="13" coveredconditionals="0" methods="5" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="10" count="0" type="cond" truecount="0" falsecount="6"/>
+          <line num="11" count="0" type="cond" truecount="0" falsecount="7"/>
+          <line num="13" count="0" type="stmt"/>
+          <line num="20" count="0" type="stmt"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="36" count="0" type="stmt"/>
+          <line num="37" count="0" type="stmt"/>
+          <line num="38" count="0" type="stmt"/>
+          <line num="45" count="0" type="stmt"/>
+          <line num="46" count="0" type="stmt"/>
+          <line num="47" count="0" type="stmt"/>
+          <line num="48" count="0" type="stmt"/>
+          <line num="49" count="0" type="stmt"/>
+          <line num="50" count="0" type="stmt"/>
+          <line num="57" count="0" type="stmt"/>
+          <line num="58" count="0" type="stmt"/>
+          <line num="65" count="0" type="stmt"/>
+          <line num="69" count="1" type="stmt"/>
+          <line num="70" count="0" type="stmt"/>
+          <line num="71" count="1" type="stmt"/>
+          <line num="73" count="1" type="stmt"/>
+          <line num="74" count="0" type="stmt"/>
+          <line num="75" count="0" type="stmt"/>
+          <line num="76" count="0" type="stmt"/>
+          <line num="82" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="actions">
+        <metrics statements="17" coveredstatements="16" conditionals="8" coveredconditionals="0" methods="8" coveredmethods="0"/>
+        <file name="Quotes.js" path="/Users/Parth/Documents/NativeApps/Quotes/app/actions/Quotes.js">
+          <metrics statements="17" coveredstatements="16" conditionals="8" coveredconditionals="0" methods="8" coveredmethods="0"/>
+          <line num="1" count="1" type="cond" truecount="0" falsecount="4"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="29" count="1" type="stmt"/>
+          <line num="32" count="1" type="stmt"/>
+          <line num="35" count="1" type="stmt"/>
+          <line num="38" count="1" type="stmt"/>
+          <line num="41" count="1" type="cond" truecount="0" falsecount="4"/>
+          <line num="43" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="tests">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="setup.js" path="/Users/Parth/Documents/NativeApps/Quotes/app/tests/setup.js">
+          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="4" type="stmt"/>
+          <line num="2" count="4" type="stmt"/>
+          <line num="4" count="4" type="stmt"/>
+          <line num="8" count="4" type="stmt"/>
+        </file>
+      </package>
+      <package name="tests.fixtures">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="favourites-fixture.js" path="/Users/Parth/Documents/NativeApps/Quotes/app/tests/fixtures/favourites-fixture.js">
+          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
+        </file>
+        <file name="quotes-fixture.js" path="/Users/Parth/Documents/NativeApps/Quotes/app/tests/fixtures/quotes-fixture.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="3" type="stmt"/>
+          <line num="51" count="3" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>

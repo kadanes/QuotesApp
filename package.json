@@ -7,7 +7,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "babel-preset-react-native": "5.0.2",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "enzyme-to-json": "^3.3.5",
     "firebase": "^5.7.0",
+    "jest-react-native": "^18.0.0",
     "react": "16.6.1",
     "react-native": "0.57.7",
     "react-native-fontawesome": "^6.0.1",
@@ -19,12 +24,22 @@
     "redux-saga": "^0.16.2"
   },
   "devDependencies": {
-    "babel-jest": "23.6.0",
-    "jest": "23.6.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
     "metro-react-native-babel-preset": "0.50.0",
-    "react-test-renderer": "16.6.1"
+    "react-dom": "^16.7.0",
+    "react-test-renderer": "^16.7.0"
   },
   "jest": {
-    "preset": "react-native"
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    },
+    "setupFiles": [
+      "<rootDir>/app/tests/setup.js"
+    ],
+    "preset": "react-native",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

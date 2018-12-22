@@ -1,23 +1,22 @@
 import React, {Component} from 'react'
-import { View, Text, StyleSheet } from 'react-native'
-import Ionicons from 'react-native-vector-icons/Ionicons'
+import { TouchableOpacity, View, Text, StyleSheet } from 'react-native'
 
 export default class CategoryCell extends Component {
     render() {
         return (
-            
-            <View style={styles.Container}>
-                <View style={styles.CategoryHeader}>
-                    <Text style={styles.Category}> {this.props.Category.category} </Text>
-                    <Text style={styles.QuotesCount}>{this.props.Category.quotes.length} </Text>
+            <TouchableOpacity 
+                onPress={() => this.props.navigation.navigate('Quotes',{ id: this.props.id})}
+            >
+                <View style={styles.Container}>
+                    <View style={styles.CategoryHeader}>
+                        <Text style={styles.Category}> {this.props.Category.category} </Text>
+                        <Text style={styles.QuotesCount}>{this.props.Category.quotes.length} </Text>
+                    </View>
+                    <View style={styles.AuthorBlock}>
+                        {this.props.Category.quotes.map(item => <Text style={styles.Author}> {item.person}</Text>)}
+                    </View>
                 </View>
-                <View style={styles.AuthorBlock}>
-                    {this.props.Category.quotes.map(item => <Text style={styles.Author}> {item.person}</Text>)}
-                </View>
-                
-                
-            </View>
-            
+            </TouchableOpacity>
         )
     }
 }

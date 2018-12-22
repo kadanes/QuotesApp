@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing CategoryCell component category-cell renders correctly 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#ff6347",
+        "borderRadius": 15,
+        "flex": 1,
+        "margin": 10,
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "textTransform": "capitalize",
+          }
+        }
+      >
+         
+        inspirational
+         
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 12,
+            "fontWeight": "600",
+          }
+        }
+      >
+        3
+         
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "marginLeft": 5,
+          "marginTop": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#E0E0E0",
+            "fontSize": 14,
+          }
+        }
+      >
+         
+        Theodore Roosevelt
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#E0E0E0",
+            "fontSize": 14,
+          }
+        }
+      >
+         
+        Norman Vincent Peale
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#E0E0E0",
+            "fontSize": 14,
+          }
+        }
+      >
+         
+        Robert H. Schuller
+      </Text>
+    </View>
+  </View>
+</TouchableOpacity>
+`;

@@ -25,10 +25,14 @@ function* setQuotesSaga() {
 
       favourites = yield retrieveData('favourites')
 
-      yield put(setFavourites(favourites.split(',')))
+      if (favourites) {
+          yield put(setFavourites(favourites.split(',')))
+      } else {
+        yield put(setFavourites())
+      }
 
     } else {
-      yield put(setError()) 
+      yield put(setFavourites())
     }
 }
 
@@ -45,7 +49,7 @@ function* saveQuoteSaga(action) {
 
     favourites = yield retrieveData('favourites')
     
-    if (favourites == undefined) {
+    if (favourites === undefined) {
       success = yield storeData('favourites',`${parentId}_${id}`)
       if (success) {
         yield put(saveQuote(action.parentId,action.id))
@@ -119,6 +123,7 @@ retrieveData = async (key) => {
       // We have data!!
       return value
     } else {
+      console.log("No value")
       return undefined
     }
    } catch (error) {

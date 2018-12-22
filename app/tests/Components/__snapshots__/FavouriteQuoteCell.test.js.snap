@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing FavouriteQuoteCell should render FavouriteQuoteCell correctly 1`] = `
+<TouchableHighlight
+  activeOpacity={0.85}
+  delayPressOut={100}
+  onPress={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#ff6347",
+      "borderRadius": 15,
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "space-around",
+      "margin": 5,
+      "padding": 10,
+    }
+  }
+  underlayColor="black"
+>
+  <View>
+    <Text
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Believe you can and you"re halfway there
+    </Text>
+    <Text
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "color": "white",
+          "fontWeight": "200",
+          "height": 20,
+          "justifyContent": "flex-end",
+        }
+      }
+    >
+      -- 
+      Theodore Roosevelt
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "borderRadius": 10,
+          "flex": 1,
+          "height": 20,
+          "justifyContent": "center",
+          "marginTop": 10,
+          "padding": 2,
+          "width": 100,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#ff6347",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "margin": "auto",
+            "textTransform": "capitalize",
+          }
+        }
+      >
+        inspirational
+      </Text>
+    </View>
+  </View>
+</TouchableHighlight>
+`;

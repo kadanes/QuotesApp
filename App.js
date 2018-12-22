@@ -14,13 +14,11 @@ import rootSaga from  './app/Sagas/Quotes'
 import Quotes from './app/Reducer/Quotes'
 import { fetchQuotes } from './app/actions/Quotes'
 
-
 const sagaMiddleware = createSagaMiddleware()
 const store = createStore(Quotes,applyMiddleware(sagaMiddleware))
 sagaMiddleware.run(rootSaga)  
 
 store.dispatch(fetchQuotes())     
-
 
 // export default (<Provider store={store}><AppContainer/></Provider>  )
 

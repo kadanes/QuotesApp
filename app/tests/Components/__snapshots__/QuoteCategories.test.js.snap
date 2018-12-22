@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing QuoteCategories component should load error button when error loading 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "red",
+      }
+    }
+  >
+    FAILED TO LOAD DATA
+  </Text>
+  <Button
+    title="Reload"
+  />
+</View>
+`;
+
+exports[`Testing QuoteCategories component should show categories list 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <FlatList
+    data={
+      Array [
+        Object {
+          "category": "inspirational",
+          "icon": "brush",
+          "quotes": Array [
+            Object {
+              "id": "1",
+              "person": "Theodore Roosevelt",
+              "text": "Believe you can and you\\"re halfway there",
+            },
+            Object {
+              "id": "2",
+              "person": "Norman Vincent Peale",
+              "text": "Change your thoughts and you change your world.",
+            },
+            Object {
+              "id": "3",
+              "person": "Robert H. Schuller",
+              "text": "What great thing would you attempt if you knew you could not fail?",
+            },
+          ],
+        },
+        Object {
+          "category": "ability",
+          "icon": "bicycle",
+          "quotes": Array [
+            Object {
+              "id": "4",
+              "person": "John Wooden",
+              "text": "Ability may get you to the top, but it takes character to keep you there.",
+            },
+            Object {
+              "id": "5",
+              "person": "Robert Frost",
+              "text": "Education is the ability to listen to almost anything without losing your temper.",
+            },
+          ],
+        },
+        Object {
+          "category": "enthusiasm",
+          "icon": "battery-charging",
+          "quotes": Array [
+            Object {
+              "id": "6",
+              "person": "Benjamin Disraeli",
+              "text": "Every product of genius must be the product of enthusiasm.",
+            },
+            Object {
+              "id": "7",
+              "person": "Norman Vincent Peale",
+              "text": "Enthusiasm releases the drive to carry you over obstacles and adds significance to all you do.",
+            },
+          ],
+        },
+        Object {
+          "category": "motivational",
+          "icon": "body",
+          "quotes": Array [
+            Object {
+              "id": "8",
+              "person": "Jim Rohn",
+              "text": "Either you run the day or the day runs you.",
+            },
+            Object {
+              "id": "9",
+              "person": "Donna Brazile",
+              "text": "I was motivated to be different in part because I was different.",
+            },
+          ],
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    style={
+      Object {
+        "flex": 1,
+        "width": "100%",
+      }
+    }
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+  <Text>
+    Additions
+  </Text>
+</View>
+`;
+
+exports[`Testing QuoteCategories component should show loader 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Component
+    animating={true}
+    color="#999999"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</View>
+`;

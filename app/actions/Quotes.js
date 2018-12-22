@@ -38,7 +38,7 @@ export const watchUnsaveQuote = (parentId,id) => ({
     id
 })
 
-export const setFavourites = (quoteIds) => ({
+export const setFavourites = (quoteIds = []) => ({
     type: 'SET_FAVOURITES',
     quoteIds
 })
