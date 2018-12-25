@@ -16,37 +16,34 @@ export default function (state = defaultState, action) {
                 error: false,
                 data: action.data
             }
+
         case 'SET_ERROR':
             return{
                 ...state,
                 loading: false,
-                error: true,
-                data:undefined
+                error: true
             }
-        case 'SET_QUOTES': {
-            return {
-                ...state,
-                loading: true,
-                error: false,
-                data: undefined
-                
-            }
-        }
+
         case 'SAVE_QUOTE':{
-            combinedId = `${action.parentId}_${action.id}`
-            favourites = state.favourites.concat(combinedId)
-            return {
-                ...state,
-                favourites            
+            const combinedId = `${action.parentId}_${action.id}`
+            
+            if (!state.favourites.includes(combinedId)) {
+                const favourites = state.favourites.concat(combinedId)
+                state = { 
+                    ...state,
+                    favourites            
+                } 
+            }
+            return { 
+                ...state         
             } 
         }
 
         case 'UNSAVE_QUOTE': {
-            id = action.id
-            parentId = action.parentId
-            combinedId = `${parentId}_${id}`
-            console.log('UNSAVE QUOTE ',combinedId) 
-            favourites = state.favourites.filter(favId => favId !== combinedId )
+            const id = action.id
+            const parentId = action.parentId
+            const combinedId = `${parentId}_${id}`
+            const favourites = state.favourites.filter(favId => favId !== combinedId )
             return {
                 ...state,
                 favourites
@@ -54,7 +51,6 @@ export default function (state = defaultState, action) {
         }
         
         case 'SET_FAVOURITES': {
-            console.log(action.quoteIds)
             return {
                 ...state,
                 favourites: action.quoteIds,

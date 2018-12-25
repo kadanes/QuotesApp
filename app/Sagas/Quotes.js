@@ -75,10 +75,10 @@ function* watchSaveQuote() {
 }
 
 
-function* unsaveQuotesSaga(action) {
-    id = action.id
-    parentId = action.parentId
-    combinedId = `${parentId}_${id}`
+export function* unsaveQuotesSaga(action) {
+    const id = action.id
+    const parentId = action.parentId
+    const combinedId = `${parentId}_${id}`
 
     var favourites = yield select(getFavourites)
     favourites = favourites.filter(id => id !== combinedId )
@@ -106,7 +106,7 @@ export default function* rootSaga() {
   ])
 }
 
-storeData = async (key,value) => {
+const storeData = async (key,value) => {
   try {
     await AsyncStorage.setItem(key,value);
     return true
@@ -116,7 +116,7 @@ storeData = async (key,value) => {
   }
 }
 
-retrieveData = async (key) => {
+const retrieveData = async (key) => {
   try {
     const value = await AsyncStorage.getItem(key);
     if (value !== null) {

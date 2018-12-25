@@ -3,7 +3,6 @@ import { createAppContainer } from "react-navigation"
 
 import Navigator from './app/Navigator/Navigator'
 
-
 const AppContainer = createAppContainer(Navigator)
 
 import { Provider } from 'react-redux';

@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">64.29% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>18/28</span>
+        <span class='fraction'>27/27</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>8/8</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">94.12% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>16/17</span>
+        <span class='fraction'>17/17</span>
       </div>
     </div>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -88,92 +88,92 @@
 43
 44
 45
-46</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+46</td><td class="line-coverage quiet"><span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export const setQuotes = (data = {warning: 'NO QUOTES PASSED IN'}) =&gt; {<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
-<span class="cstat-no" title="statement not covered" >    return {</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export const setQuotes = (data) =&gt; {
+    return {
         type: 'SET_QUOTES',
         data
     }
    
 }
-export const setError = <span class="fstat-no" title="function not covered" >() =&gt; ({<span class="cstat-no" title="statement not covered" ></span></span>
+export const setError = () =&gt; ({
     type: 'SET_ERROR',
 })
 &nbsp;
-export const fetchQuotes = <span class="fstat-no" title="function not covered" >() =&gt; ({<span class="cstat-no" title="statement not covered" ></span></span>
+export const fetchQuotes = () =&gt; ({
     type: 'FETCH_QUOTES',
 })
 &nbsp;
-export const saveQuote = <span class="fstat-no" title="function not covered" >(parentId,</span>id) =&gt; ({<span class="cstat-no" title="statement not covered" ></span>
+export const saveQuote = (parentId,id) =&gt; ({
     type: 'SAVE_QUOTE',
     parentId,
     id
 })
 &nbsp;
-export const watchSaveQuote = <span class="fstat-no" title="function not covered" >(parentId,id) =</span>&gt; ({<span class="cstat-no" title="statement not covered" ></span>
+export const watchSaveQuote = (parentId,id) =&gt; ({
     type: 'WATCH_SAVE_QUOTE',
     parentId,
     id
 })
 &nbsp;
 &nbsp;
-export const unsaveQuote = <span class="fstat-no" title="function not covered" >(parentId,id</span>) =&gt; ({<span class="cstat-no" title="statement not covered" ></span>
+export const unsaveQuote = (parentId,id) =&gt; ({
     type: 'UNSAVE_QUOTE',
     parentId,
     id
 })
 &nbsp;
-export const watchUnsaveQuote = <span class="fstat-no" title="function not covered" >(parentId,id) =&gt; </span>({<span class="cstat-no" title="statement not covered" ></span>
+export const watchUnsaveQuote = (parentId,id) =&gt; ({
     type: 'WATCH_UNSAVE_QUOTE',
     parentId,
     id
 })
 &nbsp;
-export const setFavourites = <span class="fstat-no" title="function not covered" >(quoteIds = []</span>) =&gt; ({<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
+export const setFavourites = (quoteIds = []) =&gt; ({
     type: 'SET_FAVOURITES',
     quoteIds
 })
@@ -184,7 +184,7 @@ export const setFavourites = <span class="fstat-no" title="function not covered"
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Dec 22 2018 12:50:06 GMT+0530 (IST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Dec 25 2018 14:08:46 GMT+0530 (IST)
 </div>
 </div>
 <script src="../prettify.js"></script>

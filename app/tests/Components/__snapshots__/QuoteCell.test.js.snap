@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing QuoteCell should render component corretly 1`] = `
+<View
+  key="0"
+  style={
+    Object {
+      "backgroundColor": "#ff6347",
+      "borderRadius": 15,
+      "margin": 5,
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Believe you can and you"re halfway there
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontWeight": "200",
+            "height": 20,
+            "marginTop": 10,
+          }
+        }
+      >
+        -- 
+        Theodore Roosevelt
+      </Text>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+    >
+      <Icon
+        allowFontScaling={false}
+        name="ios-remove-circle"
+        size={12}
+        style={
+          Object {
+            "color": "#DCDCDC",
+            "fontSize": 30,
+            "fontWeight": "700",
+          }
+        }
+      />
+    </TouchableOpacity>
+  </View>
+</View>
+`;

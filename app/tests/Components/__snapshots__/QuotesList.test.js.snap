@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Quote List should render QuoteList 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <FlatList
+    data={
+      Array [
+        Object {
+          "id": "1",
+          "person": "Theodore Roosevelt",
+          "text": "Believe you can and you\\"re halfway there",
+        },
+        Object {
+          "id": "2",
+          "person": "Norman Vincent Peale",
+          "text": "Change your thoughts and you change your world.",
+        },
+        Object {
+          "id": "3",
+          "person": "Robert H. Schuller",
+          "text": "What great thing would you attempt if you knew you could not fail?",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    keyIterator={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    style={
+      Object {
+        "flex": 1,
+        "width": "100%",
+      }
+    }
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</View>
+`;

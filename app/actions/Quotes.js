@@ -1,4 +1,4 @@
-export const setQuotes = (data = {warning: 'NO QUOTES PASSED IN'}) => {
+export const setQuotes = (data) => {
     return {
         type: 'SET_QUOTES',
         data
